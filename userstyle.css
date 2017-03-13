@@ -21,6 +21,10 @@ ul.tab-menu li,
     padding: 1em;
 }
 
+.page-number {
+    padding: 0.5em;
+}
+
 #nav-menu ul {
     border-bottom: 1px solid #fdbc4b;
 }
