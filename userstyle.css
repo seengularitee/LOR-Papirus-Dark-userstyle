@@ -18,6 +18,7 @@ ul.tab-menu li,
     border-width: 1px !important;
     border-color: #4b4743 !important;
     border-radius: 1px !important;
+    padding: 1em;
 }
 
 #nav-menu ul {
