@@ -2,8 +2,11 @@
     html,
     body {
         --bg-color: #222222;
+        --darker-bg-color: #111111;
         --fg-color: #eff0f1;
         --link-fg-color: #2980b9;
+        --border-color: #565656;
+        --accent-bg-color: #f67400;
         --accent-fg-color: #fdbc4b;
         --table-hover-color: #575B5F;
         color: var(--fg-color);
@@ -14,16 +17,29 @@
     .boxlet,
     #user-menu,
     #contents,
+    #ft-back-button,
     ul.tab-menu li,
     #nav-menu,
     .page-number,
+    .btn,
+    .btn-default,
     .message-table .tag {
         background-color: var(--bg-color) !important;
+        color: var(--fg-color) !important;
+        border-color: var(--border-color) !important;
         border-style: solid !important;
         border-width: 1px !important;
         border-radius: 1px !important;
-        border-color: #4b4743 !important;
         padding: 1em;
+    }
+    #ft {
+        padding: 1em;
+        border-top-style: solid;
+        border-color: var(--border-color);
+        border-top-width: 1px !important;
+    }
+    .message-table a {
+        color: var(--fg-color) !important;
     }
     .page-number {
         padding: 0.5em;
@@ -32,7 +48,7 @@
         padding: 2px 4px;
     }
     #nav-menu ul {
-        border-bottom: 1px solid var(--link-fg-color);
+        border-bottom: 1px solid var(--link-fg-color) !important;
     }
     .code,
     #content-article pre,
@@ -60,10 +76,10 @@
         background-color: var(--table-hover-color) !important;
     }
     .group-label {
-        background-color: #715E3E !important;
+        background-color: var(--bg-color) !important;
     }
     .messages .msg:target {
-        border: 1px solid #962727;
+        border: 1px solid var(--accent-bg-color);
     }
     .stars,
     #bd .sign a {
@@ -71,27 +87,23 @@
     }
     #bd .btn-default,
     #bd .nav li a {
-        color: #bdbdbd !important;
-        background-color: #444444 !important;
+        color: var(--fg-color) !important;
+        background-color: var(--bg-color) !important;
     }
     #bd .btn-selected {
-        color: #111111 !important;
-        background-color: #999999 !important;
+        color: var(--link-fg-color) !important;
+        background-color: var(---darker-bg-color) !important;
     }
     #bd .nav li a.current {
-        background-color: #bababa !important;
-    }
-    #bd .btn-primary {
-        color: #bdbdbd !important;
-        background-color: #434E5F !important;
+        background-color: var(--bg-color) !important;
     }
     #bd .btn-danger {
-        color: #bdbdbd !important;
-        background-color: #793030 !important;
+        color: var(--fg-color) !important;
+        background-color: var(--accent-bg-color) !important;
     }
     #bd .btn:hover,
     #bd .nav li a:hover {
-        box-shadow: 0px 0px 1px 1px #666666;
+        box-shadow: 0px 0px 1px 1px var(--border-color);
     }
     * img,
     .penguin_progress span {
