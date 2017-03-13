@@ -1,113 +1,103 @@
 @-moz-document url-prefix("https://www.linux.org.ru/") {
-html,
-body {
-    color: #eff0f1;
-    background-color: #222222 !important;
-}
-
-.messages .msg,
-.infoblock,
-.boxlet,
-#user-menu,
-#contents,
-ul.tab-menu li,
-#nav-menu,
-.page-number {
-    background-color: #222222 !important;
-    border-style: solid !important;
-    border-width: 1px !important;
-    border-color: #4b4743 !important;
-    border-radius: 1px !important;
-    padding: 1em;
-}
-
-.page-number {
-    padding: 0.5em;
-}
-
-#nav-menu ul {
-    border-bottom: 1px solid #fdbc4b;
-}
-
-.code,
-#content-article pre,
-#toc {
-    background-color: #222222 !important;
-}
-
-a,
-#hd .menu a {
-    color: #fdbc4b !important;
-}
-
-h1 a,
-h2 a,
-td a,
-.nav a {
-    color: #cccccc !important;
-}
-
-#bd a.tag {
-    color: #CABEB5 !important;
-}
-
-#bd h2 * {
-    color: #bdbdbd;
-}
-
-#bd .forum table tbody tr:hover {
-    background-color: #513536 !important;
-}
-
-.group-label {
-    background-color: #715E3E !important;
-}
-
-.messages .msg:target {
-    border: 1px solid #962727;
-}
-
-.stars,
-#bd .sign a {
-    color: #aaccaa !important;
-}
-
-#bd .btn-default,
-#bd .nav li a {
-    color: #bdbdbd !important;
-    background-color: #444444 !important;
-}
-
-#bd .btn-selected {
-    color: #111111 !important;
-    background-color: #999999 !important;
-}
-
-#bd .nav li a.current {
-    background-color: #bababa !important;
-}
-
-#bd .btn-primary {
-    color: #bdbdbd !important;
-    background-color: #434E5F !important;
-}
-
-#bd .btn-danger {
-    color: #bdbdbd !important;
-    background-color: #793030 !important;
-}
-
-#bd .btn:hover,
-#bd .nav li a:hover {
-    box-shadow: 0px 0px 1px 1px #666666;
-}
-
-* img,
-.penguin_progress span {
-    opacity: 0.5;
-}
-
-* img:hover {
-    opacity: 1;
-}
+    html,
+    body {
+        --bg-color: #222222;
+        --fg-color: #eff0f1;
+        --link-fg-color: #2980b9;
+        --accent-fg-color: #fdbc4b;
+        --table-hover-color: #575B5F;
+        color: var(--fg-color);
+        background-color: var(--bg-color) !important;
+    }
+    .messages .msg,
+    .infoblock,
+    .boxlet,
+    #user-menu,
+    #contents,
+    ul.tab-menu li,
+    #nav-menu,
+    .page-number,
+    .message-table .tag {
+        background-color: var(--bg-color) !important;
+        border-style: solid !important;
+        border-width: 1px !important;
+        border-radius: 1px !important;
+        border-color: #4b4743 !important;
+        padding: 1em;
+    }
+    .page-number {
+        padding: 0.5em;
+    }
+    .message-table .tag {
+        padding: 2px 4px;
+    }
+    #nav-menu ul {
+        border-bottom: 1px solid var(--link-fg-color);
+    }
+    .code,
+    #content-article pre,
+    #toc {
+        background-color: var(--bg-color) !important;
+    }
+    a,
+    #hd .menu a {
+        color: var(--link-fg-color) !important;
+    }
+    h1 a,
+    h2 a,
+    td a,
+    .nav a {
+        color: var(--link-fg-color) !important;
+    }
+    #bd a.tag,
+    .message-table .tag {
+        color: var(--accent-fg-color) !important;
+    }
+    #bd h2 * {
+        color: var(--fg-color);
+    }
+    #bd .message-table tbody tr:hover {
+        background-color: var(--table-hover-color) !important;
+    }
+    .group-label {
+        background-color: #715E3E !important;
+    }
+    .messages .msg:target {
+        border: 1px solid #962727;
+    }
+    .stars,
+    #bd .sign a {
+        color: var(--accent-fg-color) !important;
+    }
+    #bd .btn-default,
+    #bd .nav li a {
+        color: #bdbdbd !important;
+        background-color: #444444 !important;
+    }
+    #bd .btn-selected {
+        color: #111111 !important;
+        background-color: #999999 !important;
+    }
+    #bd .nav li a.current {
+        background-color: #bababa !important;
+    }
+    #bd .btn-primary {
+        color: #bdbdbd !important;
+        background-color: #434E5F !important;
+    }
+    #bd .btn-danger {
+        color: #bdbdbd !important;
+        background-color: #793030 !important;
+    }
+    #bd .btn:hover,
+    #bd .nav li a:hover {
+        box-shadow: 0px 0px 1px 1px #666666;
+    }
+    * img,
+    .penguin_progress span {
+        opacity: 0.5;
+    }
+    * img:hover {
+        opacity: 1;
+    }
 }
