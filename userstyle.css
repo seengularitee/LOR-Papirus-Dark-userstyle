@@ -23,7 +23,7 @@
     .page-number,
     .btn,
     .btn-default,
-    .message-table .tag {
+    .message-table .tag, #related-topics-list .group-label {
         background-color: var(--bg-color) !important;
         color: var(--fg-color) !important;
         border-color: var(--border-color) !important;
@@ -44,7 +44,7 @@
     .page-number {
         padding: 0.5em;
     }
-    .message-table .tag {
+    .message-table .tag, #related-topics-list .group-label {
         padding: 2px 4px;
     }
     #nav-menu ul {
